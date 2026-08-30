@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Cristian González</title>
+    <meta name="description" content="Portafolio profesional de Cristian González — desarrollador de software. Proyectos, habilidades, y contacto.">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>Cristian González</h1>
+                <p class="tag">Desarrollador de Software </p>
+            </div>
+            <nav class="nav">
+                <a class="nav-contact" href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardogonzales0525%40gmail.com&su=Contacto%20desde%20tu%20portafolio" target="_blank" rel="noopener">Gmail</a>
+                <button class="btn cert-btn" type="button" data-target="#certifications">Certificaciones</button>
+                <a class="btn" href="assets/cv-cristian-gonzalez.pdf" download>Descargar CV</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-col-left">
+                    <div class="hero-text">
+                        <h2>Hola, soy Cristian González</h2>
+                        <p>Desarrollador de Software Junior | Web, Móvil y Soluciones Digitales.</p>
+                        <div class="hero-actions">
+                            <a class="btn primary" href="#projects">Ver proyectos</a>
+                            <button class="btn cert-btn" type="button" data-target="#certifications">Certificaciones</button>
+                            <a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardogonzales0525%40gmail.com&su=Contacto%20desde%20tu%20portafolio" target="_blank" rel="noopener">Contactar por Gmail</a>
+                            <a class="btn" href="assets/cv-cristian-gonzalez.pdf" download>Descargar CV</a>
+                        </div>
+                    </div>
+                    <div id="about" class="about-short">
+                        <h3>Sobre mí</h3>
+                        <p>Tecnólogo en desarrollo de software apasionado por el aprendizaje constante, con grande interés en nuevas tecnologías, creación de interfaces intuitivas y llamativas, analizar problemas y dar soluciones prácticas implementando metodologías agiles, experiencia de usuario y controlando versiones en Git.<br>
+Me gusta el mundo de IA aplicada, trabajar de la mano con estas tecnologías, optimizar procesos y reducir el tiempo de respuesta ante obstáculos.<br>
+Cuento con experiencia en proyectos personales como app móviles, páginas web y uso Power Bi, continuo ampliando mis conocimientos con disposición a aprender lo que sea requerido.<br>
+Actualmente me encuentro fortaleciendo mis habilidades en javascript, React, Node.js y bases de datos relacionales y no relacionales.
+</p>
+
+                    </div>
+                </div>
+                <div class="hero-col-right">
+                    <div class="hero-card">
+                        <img src="assets/avatar-cristian.jpg" alt="Foto de Cristian" class="avatar">
+                        <ul class="summary-list">
+                            <li><strong>Ubicación:</strong> Bogotá D.C., Colombia</li>
+                            <li><strong>Profesión:</strong> Desarrollador de Software</li>
+                            <li><strong>Edad:</strong> 22 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill"><img src="assets/html5.png" alt="HTML5" class="skill-logo"><div><strong>HTML &amp; CSS</strong><div class="skill-desc">Diseño semántico y responsive</div></div></div>
+                <div class="skill"><img src="assets/css3.png" alt="CSS3" class="skill-logo"><div><strong>CSS</strong><div class="skill-desc">Estilos modernos y responsive</div></div></div>
+                <div class="skill"><img src="assets/javascript.png" alt="JavaScript" class="skill-logo"><div><strong>JavaScript</strong><div class="skill-desc">DOM, eventos y lógica</div></div></div>
+                <div class="skill"><img src="assets/mysql.jpg" alt="MySQL" class="skill-logo"><div><strong>MySQL</strong><div class="skill-desc">Bases de datos relacionales</div></div></div>
+                <div class="skill"><img src="assets/git.png" alt="Git" class="skill-logo"><div><strong>Git &amp; GitHub</strong><div class="skill-desc">Control de versiones</div></div></div>
+                <div class="skill"><img src="assets/android-studio.png" alt="Android Studio" class="skill-logo"><div><strong>Android Studio</strong><div class="skill-desc">Desarrollo de aplicaciones Android</div></div></div>
+            </div>
+        </section>
+
+        <section id="projects" class="section container">
+            <h2>Proyectos</h2>
+            <div class="grid projects-grid">
+                <article class="card project-card">
+                    <div class="project-image">
+                        <img src="assets/alerta-roja/portada-alerta-roja.png" alt="Emblema de Alerta Roja">
+                    </div>
+                    <h3>Alerta Roja — Sistema de Gestión de Emergencias</h3>
+                    <p>Plataforma para reportar, gestionar y atender emergencias mediante ubicación GPS y evidencia fotográfica.</p>
+                    <p class="tags">Flutter · Node.js · Express · MySQL · GPS</p>
+                    <div class="card-actions">
+                        <a href="alerta-roja.html">Ver proyecto</a>
+                        <a href="https://github.com/cristiangonzalesdev/Alerta_roja-app" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card placeholder">
+                    <h3>Pendiente — Agregar proyecto</h3>
+                    
+                </article>
+
+                <article class="card placeholder">
+                    <h3>Pendiente — Agregar proyecto</h3>
+                    
+                </article>
+            </div>
+        </section>
+
+        <section id="certifications" class="section container">
+            <h2>Certificaciones</h2>
+            <p class="muted">Documentos y evidencias de cursos y competencias que respaldan mi formación.</p>
+            <div id="certificatesGrid" class="certificates-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="contact" class="section container">
+            <h2>Contacto</h2>
+            <p class="muted">¿Interesado en colaborar o quieres contratarme? Escríbeme directamente.</p>
+            <div class="contact-links">
+                <a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardogonzales0525%40gmail.com&su=Contacto%20desde%20tu%20portafolio" target="_blank" rel="noopener">Enviar correo por Gmail</a>
+                <a class="btn whatsapp-btn" href="https://wa.me/573213162584?text=Hola%20Cristian%2C%20vi%20tu%20portafolio%20y%20quiero%20ponerme%20en%20contacto." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+                <a class="btn" href="assets/cv-cristian-gonzalez.pdf" download>Descargar CV</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-links">
+                <p>© 2026 Cristian González</p>
+                <nav class="footer-nav">
+                    <a href="https://github.com/cristiangonzalesdev" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/cristiangonzalezdev/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardogonzales0525%40gmail.com&su=Contacto%20desde%20tu%20portafolio" target="_blank" rel="noopener">Gmail</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
