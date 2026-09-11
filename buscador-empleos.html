@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Market Monitor | Cristian González</title>
+    <meta name="description" content="Caso de estudio de Job Market Monitor, un automatizador de búsqueda de empleo en Python.">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header class="site-header project-header">
+        <div class="container header-inner">
+            <a class="back-link" href="index.html">← Volver al portafolio</a>
+            <a class="brand-link" href="index.html">Cristian González</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <div class="container project-hero-grid">
+                <div class="project-intro">
+                    <p class="eyebrow">Proyecto de automatización</p>
+                    <h1>Job Market Monitor</h1>
+                    <p class="project-lead">Automatización en Python para rastrear ofertas de empleo remoto en We Work Remotely.</p>
+                    <p class="muted">El sistema hace web scraping basado en palabras clave, guarda el historial de empleos encontrados en una base de datos local y envía correos automáticos únicamente cuando hay ofertas nuevas.</p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="https://github.com/cristiangonzalesdev/Buscador_empleos" target="_blank" rel="noopener">Ver código en GitHub</a>
+                    </div>
+                </div>
+                <figure class="project-hero-shot">
+                    <img src="assets/buscador_empleo/Img_presentacion.png" alt="Portada de Job Market Monitor">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">Funcionalidades</p>
+                <h2>Automatización de principio a fin</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">🕷️</span>
+                    <h3>Web Scraping</h3>
+                    <p>Extrae datos en tiempo real de We Work Remotely buscando palabras clave específicas como 'python', 'java' o 'backend'.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">💾</span>
+                    <h3>Persistencia local</h3>
+                    <p>Almacena un historial de las ofertas vistas en una base de datos SQLite para identificar cuáles son realmente nuevas.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">📧</span>
+                    <h3>Notificaciones por correo</h3>
+                    <p>Envia automáticamente un reporte estructurado por email con las nuevas vacantes encontradas en cada ejecución.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section project-showcase">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Vista técnica</p>
+                    <h2>Así funciona internamente</h2>
+                    <p class="muted">El proyecto está diseñado para ser un script silencioso y eficiente sin depender de interfaces gráficas pesadas.</p>
+                </div>
+                <div class="screenshots-grid">
+                    <figure class="screenshot-card">
+                        <img src="assets/buscador_empleo/scraper.py.jpeg" alt="Código de web scraping">
+                        <figcaption>Código fuente del Scraper</figcaption>
+                    </figure>
+                    <figure class="screenshot-card">
+                        <img src="assets/buscador_empleo/visuaalizacion_db.jpeg" alt="Visualización de la base de datos">
+                        <figcaption>Historial guardado en SQLite</figcaption>
+                    </figure>
+                    <figure class="screenshot-card">
+                        <img src="assets/buscador_empleo/funcionamiento_script.jpeg" alt="Consola ejecutando el script">
+                        <figcaption>Ejecución del sistema y consola</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="technology-panel">
+                <div>
+                    <p class="eyebrow">Tecnología</p>
+                    <h2>Stack de automatización</h2>
+                    <p class="muted">Desarrollado en Python aprovechando bibliotecas estándar y de terceros para scraping, bases de datos y correos.</p>
+                </div>
+                <ul class="tech-list" aria-label="Tecnologías utilizadas">
+                    <li>Python 3</li>
+                    <li>BeautifulSoup4</li>
+                    <li>Requests</li>
+                    <li>SQLite3</li>
+                    <li>smtplib</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section container project-cta">
+            <h2>Explora el proyecto</h2>
+            <p class="muted">Consulta el código fuente, la descripción detallada y las instrucciones de uso en el repositorio.</p>
+            <div class="hero-actions">
+                <a class="btn primary" href="https://github.com/cristiangonzalesdev/Buscador_empleos" target="_blank" rel="noopener">Ir al repositorio</a>
+                <a class="btn" href="index.html#projects">Volver a proyectos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Cristian González</p>
+            <a href="index.html">Portafolio</a>
+        </div>
+    </footer>
+</body>
+</html>

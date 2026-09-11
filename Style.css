@@ -42,7 +42,6 @@ html,body{height:100%;margin:0;font-family:Inter,Roboto,system-ui,-apple-system,
 .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
 .avatar{transition:transform .22s ease, box-shadow .22s ease}
 .avatar:hover{transform:scale(1.015) rotate(-0.5deg);box-shadow:0 12px 32px rgba(2,8,15,0.45)}
-.avatar{width:100%;height:auto;border-radius:8px;display:block;margin-bottom:0.75rem;object-fit:cover;background:#0b1220}
 .summary-list{list-style:none;padding:0;margin:0;color:var(--muted)}
 
 .section{padding:1.2rem 0}
@@ -53,9 +52,9 @@ html,body{height:100%;margin:0;font-family:Inter,Roboto,system-ui,-apple-system,
 .card{background:var(--card);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
 .card h3{margin:0 0 0.4rem 0}
 .card .tags{color:var(--muted);font-size:0.9rem}
-.card-actions{margin-top:0.8rem;display:flex;gap:0.6rem}
-.card-actions a{color:var(--accent);text-decoration:none;transition:color .15s ease, transform .15s ease}
-.card-actions a:hover{color:var(--accent-2);transform:translateY(-1px)}
+.card-actions{margin-top:1rem;display:flex;gap:0.6rem;flex-wrap:wrap}
+.card-actions a{color:var(--text);text-decoration:none;transition:all .18s ease;padding:0.4rem 0.8rem;border-radius:6px;font-size:0.85rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08)}
+.card-actions a:hover{background:linear-gradient(90deg, rgba(14,165,164,0.15), rgba(124,58,237,0.15));border-color:rgba(14,165,164,0.3);transform:translateY(-2px);color:var(--text)}
 .card{background:var(--card);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03);transition:box-shadow .18s ease, transform .18s ease}
 .card:hover{box-shadow:0 7px 20px rgba(2,8,15,0.42);transform:translateY(-2px)}
 
