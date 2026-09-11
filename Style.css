@@ -11,7 +11,7 @@
   --glass: rgba(255,255,255,0.04);
 }
 *{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:Inter,Roboto,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:linear-gradient(180deg,#071023 0%, #081425 100%);color:var(--text);}
+html,body{height:100%;margin:0;font-family:Inter,Roboto,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background-color:#071023;background-image:radial-gradient(rgba(255, 255, 255, 0.06) 1.5px, transparent 1.5px), linear-gradient(180deg, #071023 0%, #081425 100%);background-size:24px 24px, 100% 100%;background-attachment:fixed;color:var(--text);}
 .container{max-width:1100px;margin:0 auto;padding:1rem;}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;gap:1rem}
 .brand h1{margin:0;font-size:1.25rem}
@@ -161,4 +161,68 @@ html,body{height:100%;margin:0;font-family:Inter,Roboto,system-ui,-apple-system,
 
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+
+/* --- Mejoras de Diseño Visual (Nuevas) --- */
+
+/* 1. Header Fijo con Efecto Cristal (Glassmorphism) */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(7, 16, 35, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* 2. Animaciones al hacer Scroll (Fade-In) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 3. Efectos en los logos de Habilidades (Escala de grises a color) */
+.skill-logo {
+  filter: grayscale(100%) opacity(0.7);
+}
+.skill:hover .skill-logo {
+  filter: grayscale(0%) opacity(1);
+}
+
+/* 4. Botón Volver arriba */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+#back-to-top:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }

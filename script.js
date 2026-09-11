@@ -95,4 +95,33 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
+  // Animaciones de scroll (Fade-In)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.section, .hero-col-left, .hero-col-right').forEach(element => {
+    element.classList.add('fade-in');
+    observer.observe(element);
+  });
+
+  // Botón de Volver arriba
+  const backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
 });
